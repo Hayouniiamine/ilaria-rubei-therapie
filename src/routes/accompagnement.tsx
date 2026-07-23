@@ -122,7 +122,7 @@ function AccompagnementPage() {
                     url="https://calendly.com/ilariarubei/rdv-decouverte"
                     rootElement={rootElement}
                     text="Entretien découverte offert →"
-                    className="inline-block mt-4 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
+                    className="block w-full sm:w-auto text-center mt-4 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
                   />
                 ) : (
                   <button className="inline-block mt-4 px-6 py-3 rounded-full bg-midnight/50 text-ivory text-sm font-sans tracking-wide" disabled>
@@ -219,7 +219,7 @@ function AccompagnementPage() {
                 <p className="font-sans text-midnight/70 text-sm">Présentiel Paris (75005) ou en ligne (Zoom)</p>
                 <a
                   href="mailto:ilariainscriptions@gmail.com"
-                  className="inline-block mt-2 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
+                  className="block w-full sm:w-auto text-center mt-2 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
                 >
                   Contact & inscription →
                 </a>
@@ -299,7 +299,7 @@ function AccompagnementPage() {
                 <p className="font-serif text-2xl text-dusty-rose mt-3">90 € <span className="text-sm text-midnight/50 font-sans">/ séance (1h15)</span></p>
                 <a
                   href="mailto:ilariainscriptions@gmail.com"
-                  className="inline-block mt-4 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
+                  className="block w-full sm:w-auto text-center mt-4 px-6 py-3 rounded-full bg-midnight text-ivory text-sm font-sans tracking-wide hover:bg-midnight/90 transition-colors"
                 >
                   Contact & inscription →
                 </a>
@@ -353,7 +353,7 @@ function AccompagnementPage() {
                 url="https://calendly.com/ilariarubei/rdv-decouverte"
                 rootElement={rootElement}
                 text="Réserver l'entretien découverte (offert)"
-                className="inline-block px-10 py-4 rounded-full bg-midnight text-ivory font-sans tracking-wide hover:bg-midnight/90 transition-all shadow-xl shadow-midnight/10 text-lg"
+                className="block w-full sm:w-auto text-center px-10 py-4 rounded-full bg-midnight text-ivory font-sans tracking-wide hover:bg-midnight/90 transition-all shadow-xl shadow-midnight/10 text-lg"
               />
             ) : (
               <button className="inline-block px-10 py-4 rounded-full bg-midnight/50 text-ivory font-sans tracking-wide text-lg" disabled>

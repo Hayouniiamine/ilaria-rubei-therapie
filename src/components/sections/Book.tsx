@@ -66,12 +66,12 @@ export function Book() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="https://www.amazon.fr/dp/B0DPZML9R7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full bg-midnight text-ivory font-sans text-sm tracking-wide hover:bg-midnight/90 transition-colors shadow-lg shadow-midnight/10"
+                className="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-midnight text-ivory font-sans text-sm tracking-wide hover:bg-midnight/90 transition-colors shadow-lg shadow-midnight/10"
               >
                 Commander sur Amazon
               </a>
@@ -79,7 +79,7 @@ export function Book() {
                 href="https://www.fnac.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full border border-midnight/15 text-midnight font-sans text-sm tracking-wide hover:border-midnight hover:bg-midnight/5 transition-all"
+                className="w-full sm:w-auto text-center px-6 py-3 rounded-full border border-midnight/15 text-midnight font-sans text-sm tracking-wide hover:border-midnight hover:bg-midnight/5 transition-all"
               >
                 Voir sur la FNAC
               </a>

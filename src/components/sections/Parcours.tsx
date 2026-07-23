@@ -142,22 +142,35 @@ export function Parcours() {
 
         {/* Card III — full width */}
         <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.24 }}
-          className={`p-8 md:p-10 rounded-[28px] border ${parcoursData[2].accentBg} backdrop-blur-sm group hover:shadow-lg transition-all duration-500 cursor-pointer`}
+          className={`lg:col-span-5 p-8 md:p-10 rounded-[28px] border ${parcoursData[2].accentBg} backdrop-blur-sm group hover:shadow-lg transition-all duration-500 cursor-pointer flex flex-col`}
           onClick={() => setSelectedService(parcoursData[2])}
         >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="flex items-center gap-4 mb-4">
+          {/* Mobile Top Row (Number + Price) - Hidden on md and up */}
+          <div className="flex md:hidden justify-between items-start mb-4">
+            <span className={`font-serif text-5xl ${parcoursData[2].accent} opacity-30 -mt-2`}>{parcoursData[2].num}</span>
+            <div className="text-right mt-4">
+              <p className="font-serif text-2xl text-midnight">{parcoursData[2].price}</p>
+              <p className="font-sans text-xs text-midnight/50">par séance</p>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 flex-grow">
+            {/* Left side text */}
+            <div className="flex-1">
+              <div className="hidden md:flex items-center gap-4 mb-4">
                 <span className={`font-serif text-5xl ${parcoursData[2].accent} opacity-30 -mt-2`}>{parcoursData[2].num}</span>
                 <h3 className="font-serif text-3xl md:text-4xl text-midnight">{parcoursData[2].title}</h3>
               </div>
-              <p className="font-sans text-midnight/70 leading-relaxed">{parcoursData[2].description}</p>
+              <h3 className="md:hidden font-serif text-3xl text-midnight mb-2">{parcoursData[2].title}</h3>
+              <p className="font-sans text-midnight/70 leading-relaxed mb-6 md:mb-0 max-w-3xl">{parcoursData[2].description}</p>
             </div>
             
-            <div className="md:text-right flex flex-col md:items-end justify-center">
-              <p className="font-serif text-4xl text-midnight mb-1">{parcoursData[2].price}</p>
-              <p className="font-sans text-sm text-midnight/50 mb-6">par séance</p>
-              
+            {/* Right side price & button (Desktop price, universal button) */}
+            <div className="md:text-right flex flex-col md:items-end justify-center md:min-w-[200px]">
+              <div className="hidden md:block">
+                <p className="font-serif text-4xl text-midnight mb-1">{parcoursData[2].price}</p>
+                <p className="font-sans text-sm text-midnight/50 mb-6">par séance</p>
+              </div>
               <span className={`inline-block font-sans text-sm font-medium ${parcoursData[2].accent} group-hover:underline tracking-wide`}>
                 Découvrir ce parcours →
               </span>

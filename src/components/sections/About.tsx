@@ -55,10 +55,10 @@ export function About() {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 to="/a-propos"
-                className="px-6 py-3 rounded-full border border-midnight/15 text-midnight font-sans text-sm tracking-wide hover:border-midnight hover:bg-midnight/5 transition-all"
+                className="w-full sm:w-auto text-center px-6 py-3 rounded-full border border-midnight/15 text-midnight font-sans text-sm tracking-wide hover:border-midnight hover:bg-midnight/5 transition-all"
               >
                 Plus à propos de moi →
               </Link>
@@ -66,7 +66,7 @@ export function About() {
                 href="https://www.youtube.com/@ilariarubei"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full border border-dusty-rose/20 text-dusty-rose font-sans text-sm tracking-wide hover:border-dusty-rose hover:bg-dusty-rose/5 transition-all"
+                className="w-full sm:w-auto text-center px-6 py-3 rounded-full border border-dusty-rose/20 text-dusty-rose font-sans text-sm tracking-wide hover:border-dusty-rose hover:bg-dusty-rose/5 transition-all"
               >
                 Voir mes vidéos YouTube
               </a>

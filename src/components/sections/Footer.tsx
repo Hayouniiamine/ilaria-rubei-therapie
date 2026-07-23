@@ -67,7 +67,7 @@ export function Footer() {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="space-y-1">
                       <label htmlFor="name" className="font-sans text-xs uppercase tracking-widest text-ivory/40">Nom</label>
                       <input 
