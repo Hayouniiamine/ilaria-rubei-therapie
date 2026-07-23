@@ -16,7 +16,8 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
@@ -64,7 +65,8 @@ export function Hero() {
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
           className="relative h-[400px] md:h-[600px] lg:h-[700px] w-full mt-10 lg:mt-0"
         >
@@ -76,7 +78,8 @@ export function Hero() {
           {/* Floating Quote */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
             className="absolute bottom-12 -left-12 bg-ivory p-6 rounded-2xl shadow-xl max-w-xs backdrop-blur-md bg-ivory/90 border border-white/50"
           >
